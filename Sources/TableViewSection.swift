@@ -56,13 +56,6 @@ public struct TableViewSection: IdentifiableSection {
     }
 }
 
-extension TableViewSection: Hashable {
-    /// :nodoc:
-    public var hashValue: Int {
-        return identifier.hashValue
-    }
-}
-
 /// :nodoc:
 public func ==(lhs: TableViewSection, rhs: TableViewSection) -> Bool {
     return lhs.identifier == rhs.identifier &&
